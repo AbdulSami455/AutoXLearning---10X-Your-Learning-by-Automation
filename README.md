@@ -22,9 +22,9 @@ Future Plan
 #Firebase Authentication 
 1. Signinto Firebase
 2. Make Project in Firebase
-   file:///home/sami/Desktop/Python/Screenshot.png
 3. Install Firebase Admin authentication Module
 4. Generate Authentication Key
 file:///home/sami/Desktop/Python/Screenshot.png
+
 5. Remaining Code is in Backend
 
