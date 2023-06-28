@@ -18,3 +18,14 @@ def signup(username, password):
     mycursor.execute(sql, values)
     db.commit()
 
+
+
+def login(username,password):
+    query = "SELECT * FROM authusers WHERE username = %s AND password = %s"
+    mycursor.execute(query, (username, password))
+    result = mycursor.fetchone()
+    return result
+
+
+
+
