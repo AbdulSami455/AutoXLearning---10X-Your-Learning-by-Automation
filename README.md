@@ -3,7 +3,7 @@ AutoX Learning is a Learning Platform with Techniques Enabled to Lessen your Lea
 
 The Salient Features of AutoX PLatform is 
 
-1. Firebase Authentication
+1. Firebase/ Mysql Authentication
 2. Modern GUI using Tkinter and Qt
 3. Learning Material Management on Device
 4. Google Calendar API for Scheduling and Time Management
