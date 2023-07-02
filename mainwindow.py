@@ -34,6 +34,8 @@ entry2.place(x=650, y=260)
 header_label = ctk.CTkLabel(loginpage, text="Login Now", font=("Montserrat", 22, "bold"))
 header_label.place(x=650, y=100)
 
+
+#calling login function
 def login():
     if auth.login(entry1.get(), entry2.get()):
         print("Hello Everyone")
@@ -45,6 +47,7 @@ login_button.place(x=700, y=320)
 
 signup_label = ctk.CTkLabel(loginpage, text="Signup (If you are New)", font=("Montserrat", 11, "bold"))
 signup_label.place(x=680, y=380)
+
 
 def sip():
     sp.signuppage()
