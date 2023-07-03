@@ -1,6 +1,7 @@
 import customtkinter as ctk
 from PIL import ImageTk, Image
-
+import authentication as auth1
+#import mainwindow as w
 
 def signuppage():
     signuppage = ctk.CTk()
@@ -23,4 +24,10 @@ def signuppage():
     # Password Label and Entry
     entry2 = ctk.CTkEntry(signuppage, width=300)
     entry2.place(x=200, y=260)
+    def signupnow():
+        auth1.signup(entry1.get(),entry2.get())
+        signuppage.destroy()
+    signbutton=ctk.CTkButton(signuppage,text="Sign Up now",command=signupnow)
+    signbutton.place(x=200,y=350)
+
 

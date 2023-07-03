@@ -1,3 +1,31 @@
+import pymysql
+
+# Establish a connection to the MySQL database
+db = pymysql.connect(
+    host="localhost",
+    user="root",
+    password="Abdullah@1234",
+    database="users"
+)
+
+# Create a cursor object
+mycursor = db.cursor()
+
+
+def signup(username, password):
+    sql = "INSERT INTO authusers (username, password) VALUES (%s, %s)"
+    values = (username, password)
+    mycursor.execute(sql, values)
+    db.commit()
+
+
+def login(username,password):
+    query = "SELECT * FROM authusers WHERE username = %s AND password = %s"
+    mycursor.execute(query, (username, password))
+    result = mycursor.fetchone()
+    return result
+
+"""
 import mysql.connector
 
 db=mysql.connector.connect(
@@ -26,6 +54,6 @@ def login(username,password):
     result = mycursor.fetchone()
     return result
 
-
+"""
 
 

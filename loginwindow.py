@@ -1,7 +1,8 @@
 import customtkinter as ctk
 from PIL import ImageTk, Image
-import authentication as auth
+import authentication as auth1
 import signuppage as sp
+import mainapplication as app
 
 # Main Window GUI
 loginpage = ctk.CTk()
@@ -34,14 +35,18 @@ entry2.place(x=650, y=260)
 header_label = ctk.CTkLabel(loginpage, text="Login Now", font=("Montserrat", 22, "bold"))
 header_label.place(x=650, y=100)
 
-
+def mainwin():
+    app.mainapplication()
 #calling login function
 def login():
-    if auth.login(entry1.get(), entry2.get()):
+    if auth1.login(entry1.get(), entry2.get()):
         print("Hello Everyone")
+        loginpage.destroy()
+        mainwin()
     else:
         print("Not Hello")
-
+        error_label=ctk.CTkLabel(loginpage,text="Username or Password is not Right")
+        error_label.place(x=660,y=290)
 login_button = ctk.CTkButton(loginpage, text="Login", command=login)
 login_button.place(x=700, y=320)
 
