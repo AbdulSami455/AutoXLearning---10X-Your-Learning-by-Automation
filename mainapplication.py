@@ -4,9 +4,8 @@ def mainapplication():
   mainapp=ctk.CTk()
   mainapp.geometry("1200x600")
   mainapp.title("AutoX App")
-
-
-
+  mainapp.configure(bg='light blue')
+  mainapp.mainloop()
 
 
 
