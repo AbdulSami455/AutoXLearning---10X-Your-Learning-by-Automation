@@ -10,11 +10,11 @@ def mainapplication():
     mainapp.configure(bg='light blue')
 
     frame = ctk.CTkFrame(master=mainapp)
-    frame.place(x=200, y=0, relwidth=1.0, relheight=0.15)
+    frame.place(x=10, y=0, relwidth=0.7, relheight=0.05)
 
-    mainapp.mainloop()
 
-# Call the main application function
+
+# Call the main application function just for test purpose
 mainapplication()
 
 
