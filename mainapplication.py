@@ -10,8 +10,25 @@ def mainapplication():
     mainapp.configure(bg='light blue')
 
     frame = ctk.CTkFrame(master=mainapp)
-    frame.place(x=10, y=0, relwidth=0.7, relheight=0.05)
+    frame.place(x=10, y=0, relwidth=0.4, relheight=0.05)
 
+    button = ctk.CTkButton(frame, text="Button",width=10,height=2)
+    button.place(x=0, y=1)
+
+    button2 = ctk.CTkButton(frame, text="Button", width=10, height=2)
+    button2.place(x=100, y=1)
+
+    button3 = ctk.CTkButton(frame, text="Button", width=10, height=2)
+    button3.place(x=200, y=1)
+
+    button4 = ctk.CTkButton(frame, text="Button", width=10, height=2)
+    button4.place(x=300, y=1)
+
+    button5 = ctk.CTkButton(frame, text="Button", width=10, height=2)
+    button5.place(x=400, y=1)
+
+
+    mainapp.mainloop()
 
 
 # Call the main application function just for test purpose
