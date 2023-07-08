@@ -23,9 +23,13 @@ def mainapplication():
 
     button4 = ctk.CTkButton(frame, text="Button", width=10, height=2)
     button4.place(x=300, y=1)
-
+    
     button5 = ctk.CTkButton(frame, text="Button", width=10, height=2)
     button5.place(x=400, y=1)
+
+    frame2=ctk.CTkFrame(master=mainapp)
+    frame2.place(x=25,y=80,relwidth=0.6,relheight=0.4)
+
 
 
     mainapp.mainloop()
