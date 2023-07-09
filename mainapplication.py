@@ -30,6 +30,8 @@ def mainapplication():
     frame2=ctk.CTkFrame(master=mainapp)
     frame2.place(x=25,y=80,relwidth=0.6,relheight=0.4)
 
+    frame3=ctk.CTkFrame(master=mainapp)
+
 
 
     mainapp.mainloop()
