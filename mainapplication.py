@@ -1,4 +1,5 @@
 import customtkinter as ctk
+from PIL import ImageTk, Image
 
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("dark-blue")
@@ -23,7 +24,7 @@ def mainapplication():
 
     button4 = ctk.CTkButton(frame, text="Button", width=10, height=2)
     button4.place(x=300, y=1)
-    
+
     button5 = ctk.CTkButton(frame, text="Button", width=10, height=2)
     button5.place(x=400, y=1)
 
@@ -31,6 +32,39 @@ def mainapplication():
     frame2.place(x=25,y=80,relwidth=0.6,relheight=0.4)
 
     frame3=ctk.CTkFrame(master=mainapp)
+    frame3.place(x=780,y=140,relwidth=0.3,relheight=0.3)
+
+    frame4=ctk.CTkFrame(master=mainapp)
+    frame4.place(x=25,y=370,relwidth=0.27,relheight=0.3)
+
+    frame5=ctk.CTkFrame(master=mainapp)
+    frame5.place(x=400,y=370,relwidth=0.27,relheight=.3)
+
+    #image for frame 3
+    image = Image.open("250.png")
+    image = image.resize((380, 180), Image.ANTIALIAS)
+    image_tk = ImageTk.PhotoImage(image)
+    label = ctk.CTkLabel(frame3, image=image_tk)
+    label.configure(text="")
+    label.pack()
+
+    image = Image.open("Add a heading.png")
+    image= image.resize((700, 250), Image.ANTIALIAS)
+    image_tk2 = ImageTk.PhotoImage(image)
+    label2 = ctk.CTkLabel(frame2, image=image_tk2)
+    label2.configure(text="")
+    label2.pack()
+
+    image = Image.open("eventscontestimage.png")
+    image = image.resize((370, 270), Image.ANTIALIAS)
+    image_tk2 = ImageTk.PhotoImage(image)
+    label3 = ctk.CTkLabel(frame4, image=image_tk2)
+    label3.configure(text="")
+    label3.pack()
+
+    frame6=ctk.CTkFrame(master=mainapp)
+    frame6.place(x=800,y=370,relwidth=0.27,relheight=0.3)
+
 
 
 
