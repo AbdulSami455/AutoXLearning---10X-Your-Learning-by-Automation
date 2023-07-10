@@ -40,8 +40,11 @@ def mainapplication():
     frame5=ctk.CTkFrame(master=mainapp)
     frame5.place(x=400,y=370,relwidth=0.27,relheight=.3)
 
+    frame6 = ctk.CTkFrame(master=mainapp)
+    frame6.place(x=800, y=370, relwidth=0.27, relheight=0.3)
+
     #image for frame 3
-    image = Image.open("250.png")
+    image = Image.open("Add a heading (5).png")
     image = image.resize((380, 180), Image.ANTIALIAS)
     image_tk = ImageTk.PhotoImage(image)
     label = ctk.CTkLabel(frame3, image=image_tk)
@@ -55,15 +58,27 @@ def mainapplication():
     label2.configure(text="")
     label2.pack()
 
-    image = Image.open("eventscontestimage.png")
-    image = image.resize((370, 270), Image.ANTIALIAS)
+    image = Image.open("Add a heading (3).png")
+    image = image.resize((350, 250), Image.ANTIALIAS)
     image_tk2 = ImageTk.PhotoImage(image)
     label3 = ctk.CTkLabel(frame4, image=image_tk2)
     label3.configure(text="")
     label3.pack()
 
-    frame6=ctk.CTkFrame(master=mainapp)
-    frame6.place(x=800,y=370,relwidth=0.27,relheight=0.3)
+
+    image = Image.open("Add a heading (4).png")
+    image = image.resize((350, 250), Image.ANTIALIAS)
+    image_tk3 = ImageTk.PhotoImage(image)
+    label4 = ctk.CTkLabel(frame5, image=image_tk3)
+    label4.configure(text="")
+    label4.pack()
+
+    image = Image.open("Add a heading (2).png")
+    image = image.resize((350, 250), Image.ANTIALIAS)
+    image_tk4 = ImageTk.PhotoImage(image)
+    label5 = ctk.CTkLabel(frame6, image=image_tk4)
+    label5.configure(text="")
+    label5.pack()
 
 
 
