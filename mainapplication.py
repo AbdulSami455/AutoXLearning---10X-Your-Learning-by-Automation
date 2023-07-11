@@ -1,5 +1,7 @@
 import customtkinter as ctk
 from PIL import ImageTk, Image
+import dashboard.maindashboard as das
+
 
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("dark-blue")
@@ -10,26 +12,14 @@ def mainapplication():
     mainapp.title("AutoX App")
     mainapp.configure(bg='light blue')
 
-    frame = ctk.CTkFrame(master=mainapp)
-    frame.place(x=10, y=0, relwidth=0.4, relheight=0.05)
+    def maindashboardopen(event):
+        frame = event.widget
+        das.dashboardf()
 
-    button = ctk.CTkButton(frame, text="Button",width=10,height=2)
-    button.place(x=0, y=1)
-
-    button2 = ctk.CTkButton(frame, text="Button", width=10, height=2)
-    button2.place(x=100, y=1)
-
-    button3 = ctk.CTkButton(frame, text="Button", width=10, height=2)
-    button3.place(x=200, y=1)
-
-    button4 = ctk.CTkButton(frame, text="Button", width=10, height=2)
-    button4.place(x=300, y=1)
-
-    button5 = ctk.CTkButton(frame, text="Button", width=10, height=2)
-    button5.place(x=400, y=1)
-
+    #all frames
     frame2=ctk.CTkFrame(master=mainapp)
     frame2.place(x=25,y=80,relwidth=0.6,relheight=0.4)
+   #    frame2.bind("<Button-1>",frame_clicked)
 
     frame3=ctk.CTkFrame(master=mainapp)
     frame3.place(x=780,y=140,relwidth=0.3,relheight=0.3)
@@ -43,7 +33,7 @@ def mainapplication():
     frame6 = ctk.CTkFrame(master=mainapp)
     frame6.place(x=800, y=370, relwidth=0.27, relheight=0.3)
 
-    #image for frame 3
+    #Setting Images to Frame
     image = Image.open("Add a heading (5).png")
     image = image.resize((380, 180), Image.ANTIALIAS)
     image_tk = ImageTk.PhotoImage(image)
@@ -51,12 +41,14 @@ def mainapplication():
     label.configure(text="")
     label.pack()
 
+
     image = Image.open("Add a heading.png")
     image= image.resize((700, 250), Image.ANTIALIAS)
     image_tk2 = ImageTk.PhotoImage(image)
     label2 = ctk.CTkLabel(frame2, image=image_tk2)
     label2.configure(text="")
     label2.pack()
+    label2.bind("<Button-1>",frame_clicked)
 
     image = Image.open("Add a heading (3).png")
     image = image.resize((350, 250), Image.ANTIALIAS)
@@ -79,6 +71,17 @@ def mainapplication():
     label5 = ctk.CTkLabel(frame6, image=image_tk4)
     label5.configure(text="")
     label5.pack()
+
+    #Warning Label
+    labelcheck=ctk.CTkLabel(mainapp,text="Register Yourself and Check Other Credentials in Settings Tab",font=("Arial",14),fg_color="red")
+    labelcheck.place(x=500,y=30)
+
+
+    entry=ctk.CTkEntry(mainapp)
+    entry.place(x=100,y=30)
+
+    useridbutton=ctk.CTkButton(mainapp,text="Enter Your User Id")
+    useridbutton.place(x=300,y=30)
 
 
 
