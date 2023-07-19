@@ -14,8 +14,9 @@ def mainapplication():
 
     def maindashboardopen(event):
         frame = event.widget
+        mainapp.destroy()
         das.dashboardf()
-
+    
     #all frames
     frame2=ctk.CTkFrame(master=mainapp)
     frame2.place(x=25,y=80,relwidth=0.6,relheight=0.4)
@@ -48,7 +49,7 @@ def mainapplication():
     label2 = ctk.CTkLabel(frame2, image=image_tk2)
     label2.configure(text="")
     label2.pack()
-    label2.bind("<Button-1>",frame_clicked)
+    label2.bind("<Button-1>",maindashboardopen)
 
     image = Image.open("Add a heading (3).png")
     image = image.resize((350, 250), Image.ANTIALIAS)
