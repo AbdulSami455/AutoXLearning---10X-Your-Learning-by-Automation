@@ -85,9 +85,6 @@ def mainapplication():
     useridbutton.place(x=300,y=30)
 
 
-
-
-
     mainapp.mainloop()
 
 
