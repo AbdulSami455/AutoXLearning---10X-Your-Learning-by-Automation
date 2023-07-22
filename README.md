@@ -23,4 +23,6 @@ Future Plan
 1. Signinto and signup using mysql.
 
 
+Project Blueprint
+https://miro.com/welcomeonboard/aEFRVm9wQ0xLUWgwcldkT3g2U0JDaGE3VXg5aWVCRHAxOWxIcUMyd0w4UWZNdTVrSHkyVFlCaXZLQlJSbERFbHwzNDU4NzY0NTI5NDE2MTU5MzI2fDI=?share_link_id=545021452306
 
