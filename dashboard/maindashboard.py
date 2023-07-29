@@ -41,6 +41,15 @@ def dashboardf():
      frame2 = ctk.CTkFrame(master=dash)
      frame2.place(x=60, y=120, relwidth=0.1, relheight=0.1)
 
+     frame3=ctk.CTkFrame(master=dash)
+     frame3.place(x=200,y=120,relwidth=0.1,relheight=0.1)
+
+     frame4=ctk.CTkFrame(master=dash)
+     frame4.place(x=320,y=120,relwidth=0.1,relheight=0.1)
+
+     frame5=ctk.CTkFrame(master=dash)
+     frame5.place(x=440,y=120,relwidth=0.1,relheight=.1)
+
 
 
      createfolder(folder_name,parent_directory)
