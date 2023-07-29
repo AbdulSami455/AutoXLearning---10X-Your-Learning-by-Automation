@@ -45,10 +45,20 @@ def dashboardf():
      frame3.place(x=200,y=120,relwidth=0.1,relheight=0.1)
 
      frame4=ctk.CTkFrame(master=dash)
-     frame4.place(x=320,y=120,relwidth=0.1,relheight=0.1)
+     frame4.place(x=340,y=120,relwidth=0.1,relheight=0.1)
 
      frame5=ctk.CTkFrame(master=dash)
-     frame5.place(x=440,y=120,relwidth=0.1,relheight=.1)
+     frame5.place(x=480,y=120,relwidth=0.1,relheight=.1)
+
+     frame6 = ctk.CTkFrame(master=dash)
+     frame6.place(x=620, y=120, relwidth=0.1, relheight=.1)
+
+     frame7 = ctk.CTkFrame(master=dash)
+     frame7.place(x=760, y=120, relwidth=0.1, relheight=.1)
+
+     frame8 = ctk.CTkFrame(master=dash)
+     frame8.place(x=880, y=120, relwidth=0.1, relheight=.1)
+
 
 
 
