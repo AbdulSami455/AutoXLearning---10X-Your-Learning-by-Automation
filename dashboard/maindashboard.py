@@ -37,10 +37,10 @@ def dashboardf():
      search = ctk.CTkEntry(dash, width=550, height=30)
      search.place(x=90, y=20)
 
+     site1=ctk.CTkButton(dash,text="CodeAcademy",command=searchnow)
+     site1.place(x=90,y=120)
 
-
-
-
+     site2=ctk.CTkButton(dash)
 
 
      createfolder(folder_name,parent_directory)
