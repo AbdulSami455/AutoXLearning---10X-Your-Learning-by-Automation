@@ -23,6 +23,9 @@ def dashboardf():
      def searchnow():
         webbrowser.open(f"https://www.google.com/search?q={search.get()}")
 
+     heading_label = ctk.CTkLabel(dash, text="Top Websites To Learn", font=("Helvetica", 22, "bold"))
+     heading_label.place(x=90,y=70)
+     # Pack the label to display it in the window
 
      image = Image.open("q8-vPggS_400x400-removebg-preview.png")
      image = image.resize((30, 30), Image.ANTIALIAS)
@@ -34,6 +37,9 @@ def dashboardf():
 
      search = ctk.CTkEntry(dash, width=550, height=30)
      search.place(x=90, y=20)
+
+     frame2 = ctk.CTkFrame(master=dash)
+     frame2.place(x=60, y=120, relwidth=0.1, relheight=0.1)
 
 
 
