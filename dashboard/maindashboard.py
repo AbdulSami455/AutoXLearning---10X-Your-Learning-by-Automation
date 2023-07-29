@@ -1,4 +1,3 @@
-
 import customtkinter as ctk
 import os
 import exceptiongroup
@@ -38,26 +37,7 @@ def dashboardf():
      search = ctk.CTkEntry(dash, width=550, height=30)
      search.place(x=90, y=20)
 
-     frame2 = ctk.CTkFrame(master=dash)
-     frame2.place(x=60, y=120, relwidth=0.1, relheight=0.1)
 
-     frame3=ctk.CTkFrame(master=dash)
-     frame3.place(x=200,y=120,relwidth=0.1,relheight=0.1)
-
-     frame4=ctk.CTkFrame(master=dash)
-     frame4.place(x=340,y=120,relwidth=0.1,relheight=0.1)
-
-     frame5=ctk.CTkFrame(master=dash)
-     frame5.place(x=480,y=120,relwidth=0.1,relheight=.1)
-
-     frame6 = ctk.CTkFrame(master=dash)
-     frame6.place(x=620, y=120, relwidth=0.1, relheight=.1)
-
-     frame7 = ctk.CTkFrame(master=dash)
-     frame7.place(x=760, y=120, relwidth=0.1, relheight=.1)
-
-     frame8 = ctk.CTkFrame(master=dash)
-     frame8.place(x=880, y=120, relwidth=0.1, relheight=.1)
 
 
 
