@@ -56,11 +56,21 @@ def dashboardf():
      heading_label2 = ctk.CTkLabel(dash, text="Top Docs To Download", font=("Helvetica", 22, "bold"))
      heading_label2.place(x=90, y=175)
 
-     image2 = Image.open("python.png")
-     image2 = image2.resize((30, 30), Image.ANTIALIAS)
+     image2 = Image.open("python-7be70baaac.png")
+     image2 = image2.resize((45, 40), Image.ANTIALIAS)
      image_tk2 = ImageTk.PhotoImage(image2)
-     pythonbutton=ctk.CTkButton(dash,image=image_tk2)
-     pythonbutton.place(x=90, y=200)
+     pythonbutton = ctk.CTkButton(dash, image=image_tk2, text="")
+     pythonbutton.place(x=90, y=220)
+     pythonbutton.configure(width=45, height=40, highlightthickness=0, highlightbackground='SystemButtonFace')
+
+     image3 = Image.open("Java-Logo.png")
+     image3 = image3.resize((45, 40), Image.ANTIALIAS)
+     image_tk3 = ImageTk.PhotoImage(image3)
+     javabutton = ctk.CTkButton(dash, image=image_tk3, text="")
+     javabutton.place(x=170, y=220)
+     javabutton.configure(width=45, height=40, highlightthickness=0, highlightbackground='SystemButtonFace')
+
+
      createfolder(folder_name,parent_directory)
 
 
