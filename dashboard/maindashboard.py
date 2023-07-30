@@ -1,3 +1,4 @@
+import dashboard.codewebsites as cw
 import customtkinter as ctk
 import os
 import exceptiongroup
@@ -37,11 +38,22 @@ def dashboardf():
      search = ctk.CTkEntry(dash, width=550, height=30)
      search.place(x=90, y=20)
 
-     site1=ctk.CTkButton(dash,text="CodeAcademy",command=searchnow)
+     site1=ctk.CTkButton(dash,text="CodeAcademy",command=cw.codeacademy)
      site1.place(x=90,y=120)
        
-     site2=ctk.CTkButton(dash,text="FreeCodeCamp",command=searchnow)
-     site2.place(x=160,y=120)
+     site2=ctk.CTkButton(dash,text="FreeCodeCamp",command=cw.freecodecamp)
+     site2.place(x=260,y=120)
+
+     site3=ctk.CTkButton(dash,text="Coursera",command=cw.coursera)
+     site3.place(x=430,y=120)
+
+     site4=ctk.CTkButton(dash,text="W3Schools",command=cw.w3schools)
+     site4.place(x=610,y=120)
+
+     site5=ctk.CTkButton(dash,text="Udacity",command=cw.udacity)
+     site5.place(x=780,y=120)
+
+
      createfolder(folder_name,parent_directory)
 
 
