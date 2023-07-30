@@ -53,7 +53,14 @@ def dashboardf():
      site5=ctk.CTkButton(dash,text="Udacity",command=cw.udacity)
      site5.place(x=780,y=120)
 
+     heading_label2 = ctk.CTkLabel(dash, text="Top Docs To Download", font=("Helvetica", 22, "bold"))
+     heading_label2.place(x=90, y=175)
 
+     image2 = Image.open("python.png")
+     image2 = image2.resize((30, 30), Image.ANTIALIAS)
+     image_tk2 = ImageTk.PhotoImage(image2)
+     pythonbutton=ctk.CTkButton(dash,image=image_tk2)
+     pythonbutton.place(x=90, y=200)
      createfolder(folder_name,parent_directory)
 
 
