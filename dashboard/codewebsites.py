@@ -10,4 +10,7 @@ def coursera():
     webbrowser.open("https://www.coursera.org/")
 
 def w3schools():
-    webbrowser.open("")
+    webbrowser.open("https://www.w3schools.com/")
+
+def udacity():
+    webbrowser.open("https://www.udacity.com/")
