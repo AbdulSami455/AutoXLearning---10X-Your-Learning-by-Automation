@@ -39,10 +39,13 @@ def dashboardf():
 
      site1=ctk.CTkButton(dash,text="CodeAcademy",command=searchnow)
      site1.place(x=90,y=120)
-
-     site2=ctk.CTkButton(dash)
-
-
+       
+     site2=ctk.CTkButton(dash,text="FreeCodeCamp",command=searchnow)
+     site2.place(x=160,y=120)
      createfolder(folder_name,parent_directory)
+
+
+
+
 
 
