@@ -63,12 +63,20 @@ def dashboardf():
      pythonbutton.place(x=90, y=220)
      pythonbutton.configure(width=45, height=40, highlightthickness=0, highlightbackground='SystemButtonFace')
 
-     image3 = Image.open("Java-Logo.png")
-     image3 = image3.resize((45, 40), Image.ANTIALIAS)
-     image_tk3 = ImageTk.PhotoImage(image3)
-     javabutton = ctk.CTkButton(dash, image=image_tk3, text="")
-     javabutton.place(x=170, y=220)
-     javabutton.configure(width=45, height=40, highlightthickness=0, highlightbackground='SystemButtonFace')
+
+     javabutton=ctk.CTkButton(dash,text="Hello",command=searchnow)
+     javabutton.place(x=150,y=220)
+
+
+
+
+
+
+
+
+
+
+
 
 
      createfolder(folder_name,parent_directory)
