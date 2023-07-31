@@ -70,7 +70,26 @@ def dashboardf():
      javabutton.place(x=210, y=220)
      javabutton.configure(width=45, height=20)
 
+     image3 = Image.open("javascript-542e10ea6e.png")
+     image3 = image3.resize((45, 40), Image.ANTIALIAS)
+     image_tk2 = ImageTk.PhotoImage(image3)
+     javascriptbutton = ctk.CTkButton(dash, image=image_tk2, text="", compound=ctk.TOP)
+     javascriptbutton.place(x=310, y=220)
+     javascriptbutton.configure(width=45, height=20)
 
+     image4 = Image.open("Typescript.png")
+     image4 = image4.resize((45, 40), Image.ANTIALIAS)
+     image_tk2 = ImageTk.PhotoImage(image4)
+     typescriptbutton = ctk.CTkButton(dash, image=image_tk2, text="", compound=ctk.TOP)
+     typescriptbutton.place(x=410, y=220)
+     typescriptbutton.configure(width=45, height=20)
+
+     image5 = Image.open("Go-Logo_Blue.png")
+     image5 = image5.resize((45, 40), Image.ANTIALIAS)
+     image_tk2 = ImageTk.PhotoImage(image5)
+     typescriptbutton = ctk.CTkButton(dash, image=image_tk2, text="", compound=ctk.TOP)
+     typescriptbutton.place(x=510, y=220)
+     typescriptbutton.configure(width=45, height=20)
 
 
 
