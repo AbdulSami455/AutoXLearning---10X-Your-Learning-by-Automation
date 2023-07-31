@@ -60,15 +60,15 @@ def dashboardf():
      image2 = image2.resize((45, 40), Image.ANTIALIAS)
      image_tk2 = ImageTk.PhotoImage(image2)
      pythonbutton = ctk.CTkButton(dash, image=image_tk2, text="")
-     pythonbutton.place(x=90, y=220)
-     pythonbutton.configure(width=45, height=40, highlightthickness=0, highlightbackground='SystemButtonFace')
+     pythonbutton.place(x=110, y=220)
+     pythonbutton.configure(width=45, height=40)
 
      image2 = Image.open("Java-Logo.png")
      image2 = image2.resize((45, 40), Image.ANTIALIAS)
      image_tk2 = ImageTk.PhotoImage(image2)
-     javabutton = ctk.CTkButton(dash, image=image_tk2, text="Hello", compound=ctk.TOP)
-     javabutton.place(x=150, y=220)
-     javabutton.configure(width=45, height=40, highlightthickness=0, highlightbackground='SystemButtonFace')
+     javabutton = ctk.CTkButton(dash, image=image_tk2, text="", compound=ctk.TOP)
+     javabutton.place(x=210, y=220)
+     javabutton.configure(width=45, height=20, highlightthickness=0, highlightbackground='SystemButtonFace')
 
 
 
