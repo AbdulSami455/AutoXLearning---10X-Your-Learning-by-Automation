@@ -68,7 +68,9 @@ def dashboardf():
      image_tk2 = ImageTk.PhotoImage(image2)
      javabutton = ctk.CTkButton(dash, image=image_tk2, text="", compound=ctk.TOP)
      javabutton.place(x=210, y=220)
-     javabutton.configure(width=45, height=20, highlightthickness=0, highlightbackground='SystemButtonFace')
+     javabutton.configure(width=45, height=20)
+
+
 
 
 
