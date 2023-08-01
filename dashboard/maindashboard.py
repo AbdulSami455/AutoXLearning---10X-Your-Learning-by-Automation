@@ -4,6 +4,7 @@ import os
 import exceptiongroup
 from PIL import ImageTk, Image
 import webbrowser
+import dashboard.downloadfiles as dd
 
 folder_name="AutoX Learning"
 parent_directory="/home/sami/Desktop/Working/"
@@ -59,7 +60,7 @@ def dashboardf():
      image2 = Image.open("python-7be70baaac.png")
      image2 = image2.resize((45, 40), Image.ANTIALIAS)
      image_tk2 = ImageTk.PhotoImage(image2)
-     pythonbutton = ctk.CTkButton(dash, image=image_tk2, text="")
+     pythonbutton = ctk.CTkButton(dash, image=image_tk2, text="",command=dd.pythondownload)
      pythonbutton.place(x=110, y=220)
      pythonbutton.configure(width=45, height=40)
 
