@@ -87,9 +87,9 @@ def dashboardf():
      image5 = Image.open("Go-Logo_Blue.png")
      image5 = image5.resize((45, 40), Image.ANTIALIAS)
      image_tk2 = ImageTk.PhotoImage(image5)
-     typescriptbutton = ctk.CTkButton(dash, image=image_tk2, text="", compound=ctk.TOP)
-     typescriptbutton.place(x=510, y=220)
-     typescriptbutton.configure(width=45, height=20)
+     gobutton = ctk.CTkButton(dash, image=image_tk2, text="", compound=ctk.TOP)
+     gobutton.place(x=510, y=220)
+     gobutton.configure(width=45, height=20)
 
 
 
