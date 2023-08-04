@@ -11,7 +11,8 @@ NEWS_API_URL = 'https://newsapi.org/v2/top-headlines'
 
 # Define parameters for the request (you can customize these)
 parameters = {
-    'country': 'us',  # Replace 'us' with the country code you want headlines from.
+    'country': 'us',
+     'category':'science',# Replace 'us' with the country code you want headlines from.
     'apiKey': API_KEY
 }
 
@@ -108,18 +109,20 @@ def dashboardf():
      gobutton.configure(width=45, height=20)
 
      response = requests.get(NEWS_API_URL, params=parameters)
-
+     topheadlines=[]
      # Check if the request was successful (status code 200)
      if response.status_code == 200:
           data = response.json()
           # Get the articles from the response
           articles = data['articles']
           # Extract and print the headlines
-          for article in articles:
-               print(article['title'])
+          for article in articles[:3]:
+               topheadlines.append(article['title'])
      else:
           print('Failed to fetch headlines:', response.status_code)
 
+     for i in topheadlines:
+          print(i)
 
 
 
