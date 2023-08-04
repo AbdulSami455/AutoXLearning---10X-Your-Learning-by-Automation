@@ -21,6 +21,7 @@ def dashboardf():
      dash=ctk.CTk()
      dash.geometry("1000x600")
 
+
      def searchnow():
         webbrowser.open(f"https://www.google.com/search?q={search.get()}")
 
