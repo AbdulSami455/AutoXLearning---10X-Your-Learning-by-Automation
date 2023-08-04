@@ -54,6 +54,8 @@ def dashboardf():
      site5=ctk.CTkButton(dash,text="Udacity",command=cw.udacity)
      site5.place(x=780,y=120)
 
+
+     #Heading for Docs Download
      heading_label2 = ctk.CTkLabel(dash, text="Top Docs To Download", font=("Helvetica", 22, "bold"))
      heading_label2.place(x=90, y=175)
 
