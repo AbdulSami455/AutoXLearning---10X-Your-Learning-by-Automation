@@ -5,6 +5,7 @@ import exceptiongroup
 from PIL import ImageTk, Image
 import webbrowser
 import dashboard.downloadfiles as dd
+from newsapi import NewsApiClient
 
 folder_name="AutoX Learning"
 parent_directory="/home/sami/Desktop/Working/"
@@ -98,8 +99,16 @@ def dashboardf():
      gobutton.place(x=510, y=220)
      gobutton.configure(width=45, height=20)
 
+     newsapi = NewsApiClient(api_key='a8ab6d9bd5684d27bab671e76c15eb91')
 
+     # /v2/top-headlines
+     top_headlines = newsapi.get_top_headlines(q='bitcoin',
+                                               sources='bbc-news,the-verge',
+                                               category='business',
+                                               language='en',
+                                               country='us')
 
+     print(top_headlines)
 
 
 
