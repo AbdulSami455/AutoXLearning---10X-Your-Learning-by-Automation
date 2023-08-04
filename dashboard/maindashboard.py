@@ -5,7 +5,15 @@ import exceptiongroup
 from PIL import ImageTk, Image
 import webbrowser
 import dashboard.downloadfiles as dd
+import requests
+API_KEY = 'a8ab6d9bd5684d27bab671e76c15eb91'
+NEWS_API_URL = 'https://newsapi.org/v2/top-headlines'
 
+# Define parameters for the request (you can customize these)
+parameters = {
+    'country': 'us',  # Replace 'us' with the country code you want headlines from.
+    'apiKey': API_KEY
+}
 
 folder_name="AutoX Learning"
 parent_directory="/home/sami/Desktop/Working/"
@@ -99,10 +107,22 @@ def dashboardf():
      gobutton.place(x=510, y=220)
      gobutton.configure(width=45, height=20)
 
+     response = requests.get(NEWS_API_URL, params=parameters)
+
+     # Check if the request was successful (status code 200)
+     if response.status_code == 200:
+          data = response.json()
+          # Get the articles from the response
+          articles = data['articles']
+          # Extract and print the headlines
+          for article in articles:
+               print(article['title'])
+     else:
+          print('Failed to fetch headlines:', response.status_code)
 
 
 
-     # print(top_headlines)
+
 
 
 
