@@ -39,6 +39,8 @@ def dashboardf():
      search = ctk.CTkEntry(dash, width=550, height=30)
      search.place(x=90, y=20)
 
+
+     #all Sites for COding Learning
      site1=ctk.CTkButton(dash,text="CodeAcademy",command=cw.codeacademy)
      site1.place(x=90,y=120)
        
