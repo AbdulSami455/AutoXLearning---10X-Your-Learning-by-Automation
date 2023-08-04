@@ -5,7 +5,7 @@ import exceptiongroup
 from PIL import ImageTk, Image
 import webbrowser
 import dashboard.downloadfiles as dd
-from newsapi import NewsApiClient
+
 
 folder_name="AutoX Learning"
 parent_directory="/home/sami/Desktop/Working/"
@@ -99,11 +99,10 @@ def dashboardf():
      gobutton.place(x=510, y=220)
      gobutton.configure(width=45, height=20)
 
-     newsapi = NewsApiClient(api_key='a8ab6d9bd5684d27bab671e76c15eb91')
 
 
 
-     print(top_headlines)
+     # print(top_headlines)
 
 
 
