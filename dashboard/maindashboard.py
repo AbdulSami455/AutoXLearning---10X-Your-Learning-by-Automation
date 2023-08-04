@@ -57,6 +57,7 @@ def dashboardf():
      heading_label2 = ctk.CTkLabel(dash, text="Top Docs To Download", font=("Helvetica", 22, "bold"))
      heading_label2.place(x=90, y=175)
 
+     #Docs for All Programming Languages
      image2 = Image.open("python-7be70baaac.png")
      image2 = image2.resize((45, 40), Image.ANTIALIAS)
      image_tk2 = ImageTk.PhotoImage(image2)
