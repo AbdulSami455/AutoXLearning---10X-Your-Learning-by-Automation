@@ -1,6 +1,9 @@
 import customtkinter as ctk
 from PIL import ImageTk, Image
 import dashboard.maindashboard as das
+from newsapi import NewsApiClient
+
+# Init
 
 
 ctk.set_appearance_mode("dark")
