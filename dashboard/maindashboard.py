@@ -122,10 +122,11 @@ def dashboardf():
           print('Failed to fetch headlines:', response.status_code)
 
      headlineframe = ctk.CTkFrame(master=dash)
-     headlineframe.place(x=80, y=330, relwidth=0.85, relheight=0.20)
+     headlineframe.place(x=80, y=340, relwidth=0.85, relheight=0.20)
 
      frameheading = ctk.CTkLabel(dash, text="Top Tech Headlines", font=("Helvetica", 22, "bold"))
      frameheading.place(x=90, y=290)
+
 
      heading1 = ctk.CTkLabel(dash, text=topheadlines[0], font=("Helvetica", 10, "bold"))
      heading1.place(x=90, y=350)
@@ -138,6 +139,9 @@ def dashboardf():
 
      heading4 = ctk.CTkLabel(dash, text=topheadlines[3], font=("Helvetica", 10, "bold"))
      heading4.place(x=90, y=410)
+
+     heading6 = ctk.CTkLabel(dash, text=topheadlines[4], font=("Helvetica", 10, "bold"))
+     heading6.place(x=90, y=430)
 
      createfolder(folder_name,parent_directory)
 
