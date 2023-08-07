@@ -127,17 +127,17 @@ def dashboardf():
      frameheading = ctk.CTkLabel(dash, text="Top Tech Headlines", font=("Helvetica", 22, "bold"))
      frameheading.place(x=90, y=290)
 
-     heading1 = ctk.CTkLabel(dash, text=topheadlines[0][0:45], font=("Helvetica", 10, "bold"))
-     heading1.place(x=90, y=310)
+     heading1 = ctk.CTkLabel(dash, text=topheadlines[0], font=("Helvetica", 10, "bold"))
+     heading1.place(x=90, y=350)
 
-     heading2 = ctk.CTkLabel(dash, text=topheadlines[1][0:55], font=("Helvetica", 10, "bold"))
-     heading2.place(x=90, y=330)
+     heading2 = ctk.CTkLabel(dash, text=topheadlines[1], font=("Helvetica", 10, "bold"))
+     heading2.place(x=90, y=370)
 
-     heading3 = ctk.CTkLabel(dash, text=topheadlines[2][0:41], font=("Helvetica", 10, "bold"))
-     heading3.place(x=90, y=360)
+     heading3 = ctk.CTkLabel(dash, text=topheadlines[2], font=("Helvetica", 10, "bold"))
+     heading3.place(x=90, y=390)
 
-     heading4 = ctk.CTkLabel(dash, text=topheadlines[3][0:56], font=("Helvetica", 10, "bold"))
-     heading4.place(x=90, y=390)
+     heading4 = ctk.CTkLabel(dash, text=topheadlines[3], font=("Helvetica", 10, "bold"))
+     heading4.place(x=90, y=410)
 
      createfolder(folder_name,parent_directory)
 
