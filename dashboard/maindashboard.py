@@ -127,7 +127,6 @@ def dashboardf():
      frameheading = ctk.CTkLabel(dash, text="Top Tech Headlines", font=("Helvetica", 22, "bold"))
      frameheading.place(x=90, y=290)
 
-
      heading1 = ctk.CTkLabel(dash, text=topheadlines[0], font=("Helvetica", 10, "bold"))
      heading1.place(x=90, y=350)
 
