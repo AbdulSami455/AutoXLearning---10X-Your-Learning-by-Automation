@@ -122,7 +122,7 @@ def dashboardf():
           print('Failed to fetch headlines:', response.status_code)
 
      headlineframe = ctk.CTkFrame(master=dash)
-     headlineframe.place(x=580, y=190, relwidth=0.33, relheight=0.65)
+     headlineframe.place(x=595, y=190, relwidth=0.33, relheight=0.65)
 
 
 
